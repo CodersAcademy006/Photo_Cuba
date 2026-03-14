@@ -122,7 +122,7 @@ async def start(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     _guest_events[chat_id] = DEFAULT_EVENT_ID
 
     await update.message.reply_text(
-        "👋 Welcome to FotoOwl!\n\n"
+        "👋 Welcome to Photo Cuba!\n\n"
         "Send me a clear selfie and I'll find all your\n"
         "photos from the event 📸\n\n"
         "Make sure your face is well-lit and front-facing."
@@ -246,7 +246,7 @@ def main():
     if not QDRANT_URL:
         raise ValueError("QDRANT_URL not set")
 
-    logger.info(f"Starting FotoOwl bot — event: {DEFAULT_EVENT_ID}")
+    logger.info(f"Starting Photo Cuba bot — event: {DEFAULT_EVENT_ID}")
     logger.info(f"Inference: {INFERENCE_URL}")
 
     app = Application.builder().token(BOT_TOKEN).build()

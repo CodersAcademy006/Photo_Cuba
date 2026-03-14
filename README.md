@@ -1,4 +1,4 @@
-# FotoOwl v2
+# Photo Cuba v2
 
 AI-powered event photo search. The laptop-side API stores face embeddings in Qdrant, uploads photos to Google Drive, and asks a Colab worker to do the heavy face detection and embedding extraction.
 
@@ -16,7 +16,7 @@ AI-powered event photo search. The laptop-side API stores face embeddings in Qdr
 1. Create `.env` from `.env.example`.
 2. Install dependencies with `pip install -r requirements.txt`.
 3. Start the Colab worker and copy its public URL into `INFERENCE_API_URL`.
-4. Run the API with `uvicorn api.main:app --reload --port 8000` from inside `fotoowl_v2`.
+4. Run the API with `uvicorn api.main:app --reload --port 8000` from inside the project directory.
 
 ## Useful commands
 

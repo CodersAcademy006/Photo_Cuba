@@ -1,4 +1,4 @@
-# FotoOwl v2 Runbook (Windows)
+# Photo Cuba v2 Runbook (Windows)
 
 This guide is the single source to run the full pipeline end-to-end.
 
@@ -111,7 +111,7 @@ Use this first for fastest debugging.
 ## Step A1: Install dependencies
 
 ```powershell
-cd d:\Srijan\Pune-Univ\FotoOwlAi\fotoowl_v2
+cd <your-path>\photo_cuba_v2
 pip install -r requirements.txt
 ```
 
@@ -144,7 +144,7 @@ Expected:
 ## Step A3: Start laptop API (port 8000)
 
 ```powershell
-cd d:\Srijan\Pune-Univ\FotoOwlAi\fotoowl_v2
+cd <your-path>\photo_cuba_v2
 uvicorn api.main:app --reload --port 8000
 ```
 
@@ -155,7 +155,7 @@ Expected:
 ## Step A4: Smoke test worker reachability
 
 ```powershell
-cd d:\Srijan\Pune-Univ\FotoOwlAi\fotoowl_v2
+cd <your-path>\photo_cuba_v2
 python tests/test_search.py --smoke
 ```
 
@@ -268,7 +268,7 @@ INFERENCE_API_URL=https://xxxx.ngrok-free.app
 ## Step B3: Start local API
 
 ```powershell
-cd d:\Srijan\Pune-Univ\FotoOwlAi\fotoowl_v2
+cd <your-path>\photo_cuba_v2
 uvicorn api.main:app --reload --port 8000
 ```
 
